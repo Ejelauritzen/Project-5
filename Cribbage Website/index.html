@@ -1,0 +1,356 @@
+<!--
+
+Project:  Project 5
+Name: Erica Egbert
+Submitted: April, 26, 2023
+
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student,
+or leaving my code on a public website constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+--!>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/page.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/main.js"></script>
+	<meta charset="UTF-8">
+	<title>How To Play Cribbage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section id="main" class="active">
+	<div class="headers">
+		<img src="img/cribLogo.png" alt="logo"/>
+		<h1>How to Play Cribbage</h1>
+		<button class="override" onclick="changeTheme()">Change Theme</button>
+	</div>
+
+	<div class="grid-container">
+		<nav class="menu">
+			<label>Menu</label>
+			<ul>
+				<li><a onclick="navigate('setUp')">Set up</a></li>
+				<li><a onclick="navigate('gamePlay')">Game play</a></li>
+				<li><a onclick="navigate('ending')">Ending the game</a></li>
+				<li><a onclick="navigate('visitorForm')">Visitor Form</a></li>
+			</ul>
+		</nav>
+		<figure>
+			<img src="img/cribbage photo.jpg" alt="Cribbage Board and Hand">
+			<figcaption>Fig. 1- Cribbage board</figcaption>
+		</figure>
+	</div>
+	<div class="content">
+		<p>Cribbage was invented by the English poet Sir John Suckling in the early 17th century.
+			The earliest rules were published in England in 1662. Cribbage was also popular among prospectors
+			in the American West, and to this day the small mining town of Nelson, Montana has a sign proclaiming
+			it the "Cribbage Capital of the World". </p>
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/beP7H7RdC-Q"
+					title="YouTube video player"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+		</div>
+	</div>
+
+
+	<div class="imageBorder"></div>
+	<footer>
+		<div class="foot">
+			<p>"Cribbage, n. A substitute for conversation among those to whom nature has denied ideas." -Ambrose
+				Bierce</p>
+		</div>
+	</footer>
+</section>
+<section id="setUp">
+	<div class="headers">
+		<img src="img/cribLogo.png" alt="logo"/>
+		<h1>Set Up</h1>
+		<button class="override" onclick="changeTheme()">Change Theme</button>
+	</div>
+	<div class="grid-container">
+		<nav class="menu">
+			<label>Menu</label>
+			<ul>
+				<li><a onclick="navigate('main')">Home</a></li>
+				<li><a onclick="navigate('gamePlay')">Game play</a></li>
+				<li><a onclick="navigate('ending')">Ending the game</a></li>
+				<li><a onclick="navigate('visitorForm')">Visitor Form</a></li>
+			</ul>
+		</nav>
+		<figure>
+			<img src="img/cribbage start.jpg" alt="Starting Set Up">
+			<figcaption>Fig. 1- Starting Set Up</figcaption>
+		</figure>
+	</div>
+	<div class="content">
+		<p>The players cut for first deal, and the person who cuts the lowest card deals.
+			The dealer shuffles and deals five or six cards to each player, depending on
+			the number of players. For two players, each is dealt six cards; for three or
+			four players, each is dealt five cards. In the case of three players, a single
+			card is dealt face down in the centre of the table to start the crib. Once the
+			cards have been dealt, each player chooses four cards to retain, then discards
+			the other one or two face-down to form the "crib" (also called the box), which
+			will be used later by the dealer.<br><br>
+			At this point, each player's hand and the crib will contain exactly four cards.
+			The player on the dealer's left or, in a two-player game, the pone, cuts the
+			remaining pack. The dealer reveals the top card of the lower half, called the
+			"starter card" or "cut", and places it face up on top of the reunited pack.
+			If this card is a jack, the dealer scores two points for "his heels" or "his nibs".</p>
+
+	</div>
+
+	<div class="imageBorder"></div>
+
+
+	<footer>
+		<div class="foot">
+			<p>"Woe to he who checkmates his opponents at last, only to discover they have been
+				playing cribbage." - Jedediah Berry</p>
+		</div>
+	</footer>
+</section>
+<section id="gamePlay">
+	<div class="headers">
+		<img src="img/cribLogo.png" alt="logo"/>
+		<h1>Game Play</h1>
+		<button class="override" onclick="changeTheme()">Change Theme</button>
+	</div>
+	<div class="grid-container">
+		<nav class="menu">
+			<label>Menu</label>
+			<ul>
+				<li><a onclick="navigate('main')">Home</a></li>
+				<li><a onclick="navigate('setUp')">Set up</a></li>
+				<li><a onclick="navigate('ending')">Ending the game</a></li>
+				<li><a onclick="navigate('visitorForm')">Visitor Form</a></li>
+			</ul>
+		</nav>
+		<figure>
+			<img src="img/gameplay.jpg" alt="Good hand">
+			<figcaption>Fig. 1- A Good Hand</figcaption>
+		</figure>
+	</div>
+	<div class="content">
+		<p> Starting with the player on the dealer's left, the players each, in turn,
+			lay one card face up on the table in front of them, stating the count—that is,
+			the cumulative value of the cards that have been laid (for example, the first
+			player lays a five and says "five", the next lays a six and says "eleven", and
+			so on)—without the count going above 31. Face cards (kings, queens, and jacks)
+			count as 10. The cards are not laid in the centre of the table as, at the end of
+			the "play", each player needs to pick up the cards they have laid.<br><br>
+
+			Players score points during the play as follows:</p>
+		<ul>
+			<li>15 – For causing the count to reach exactly 15 a player scores two points, then
+				play continues.
+			</li>
+			<li>Pair – Completing a pair (two of a kind) scores two points.</li>
+			<li>Three of a kind is the same as three different pairs, or 6 points.</li>
+			<li>Four of a kind is 6 different pairs, or 12 points.</li>
+			<li>A run of three or more cards (consecutively played, but not necessarily in order)
+				scores the number of cards in the run.
+			</li>
+		</ul>
+		<p>
+			If a player cannot play without causing the count to exceed 31, they call "Go".
+			Continuing with the player on their left, the other players continue the play until
+			no one can play without the count exceeding 31. A player is obliged to play a card
+			unless there is no card in their hand that can be played without the count exceeding
+			31 (one cannot voluntarily pass). Once 31 is reached or no one is able to play, the
+			player who played the last card scores one point if the count is still under 31 and
+			two if it is exactly 31. The count is then reset to zero and those players with cards
+			remaining in their hands repeat the process starting with the player to the left of the
+			player who played the last card. When all players have played all of their cards the game
+			proceeds to the "show".<br><br>
+
+			Players choose the order in which to lay their cards in order to maximize their scores;
+			experienced players refer to this as either good or poor "pegging" or "pegsmanship". If one
+			player reaches the target (usually 61 or 121), the game ends immediately and that player wins.
+			When the scores are level during a game, the players' pegs will be side by side, and it is
+			thought that this gave rise to the phrase "level pegging"</p>
+	</div>
+	<div class="imageBorder"></div>
+
+	<footer>
+		<div class="foot">
+			<p>"This was the kind of woman who took her tea black, smoked cigars after midnight, played a mean
+				game of cribbage, and kept a bevy of repulsive little dogs." - Gail Carriger</p>
+
+		</div>
+	</footer>
+</section>
+<section id="ending">
+	<div class="headers">
+		<img src="img/cribLogo.png" alt="logo"/>
+		<h1>Ending</h1>
+		<button class="override" onclick="changeTheme()">Change Theme</button>
+	</div>
+	<div class="grid-container">
+		<nav class="menu">
+			<label>Menu</label>
+			<ul>
+				<li><a onclick="navigate('main')">Home</a></li>
+				<li><a onclick="navigate('setUp')">Set up</a></li>
+				<li><a onclick="navigate('gamePlay')">Game play</a></li>
+				<li><a onclick="navigate('visitorForm')">Visitor Form</a></li>
+			</ul>
+		</nav>
+		<figure>
+			<img src="img/funny.webp" alt="funny">
+		</figure>
+	</div>
+
+	<div class="content">
+		<p>Once the play is complete, each player in turn, starting with the player on
+			the left of the dealer, displays their own hand on the table and scores points
+			based on its content in conjunction with the starter card. <br><br>
+			Points are scored for:</p>
+		<ul>
+			<li>Combinations of any number of cards totalling fifteen</li>
+			<li>Runs</li>
+			<li>Pairs (Multiple pairs are scored pair by pair but may be referred to as three or
+				four of a kind.)
+			</li>
+			<li>Four-card flush (All four cards in the hand of the same suit score four points.)</li>
+			<li>Five-card flush (All four cards in the hand of the same suit as the starter card
+				score five points. A flush in the crib must be a five-card flush according to the
+				official rules of the ACC.)
+			</li>
+			<li>Having a jack of the same suit as the starter card ("one for his nob [or nobs or nibs]",
+				sometimes called the "right" jack)
+			</li>
+		</ul>
+		<p>
+			The dealer scores their hand last and then turns the cards in the crib face up. These
+			cards are then scored by the dealer as an additional hand, also in conjunction with the
+			starter card. Unlike the dealer's own hand, the crib cannot score a four-card flush, but
+			it can score a five-card flush with the starter.<br>
+			The next person begins a new round by dealing again. Play continues until a person reaches a score of
+			121.
+		</p>
+	</div>
+
+	<div class="imageBorder"></div>
+
+	<footer>
+		<div class="foot">
+			<p>"Cribbage is the best!" - Erica</p>
+		</div>
+	</footer>
+</section>
+<section id="visitorForm">
+	<div class="headers">
+		<img src="img/cribLogo.png" alt="logo"/>
+		<h1>Visitor Form</h1>
+		<button class="override" onclick="changeTheme()">Change Theme</button>
+	</div>
+	<div class="grid-container">
+		<nav class="menu">
+			<label>Menu</label>
+			<ul>
+				<li><a onclick="navigate('main')">Home</a></li>
+				<li><a onclick="navigate('setUp')">Set Up</a></li>
+				<li><a onclick="navigate('gamePlay')">Game play</a></li>
+				<li><a onclick="navigate('ending')">Ending the game</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="visitorForm">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<form id="myForm" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+			<ul class="flex">
+				<li class="section-display">
+					<label for="first-name">First Name</label>
+					<input type="text" id="first-name" name="first-name"
+						   placeholder="Enter your first name here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="last-name">Last Name</label>
+					<input type="text" id="last-name" name="last-name"
+						   placeholder="Enter your last name here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="address">Address</label>
+					<input type="text" id="address" name="address"
+						   placeholder="Enter your address here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" placeholder="Enter your city here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="state">State</label>
+					<input type="text" id="state" name="state" placeholder="Enter your state here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="zip">Zip</label>
+					<input type="text" id="zip" name="zip" placeholder="Enter your zip code here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="Enter your email here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="phone">Phone</label>
+					<input type="text" id="phone" placeholder="Enter your phone here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<h2>How did you find my page</h2>
+				</li>
+				<li>
+					<input type="checkbox" id='google' name='find-page' value="google">
+					<label for="google">Google Search</label>
+				</li>
+				<li>
+					<input type="checkbox" id='friend' name='find-page' value="friend">
+					<label for="friend">Friend</label>
+				</li>
+				<li>
+					<input type="checkbox" id='facebook' name='find-page' value="facebook">
+
+					<label for="facebook">Facebook</label>
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<button type="submit">Submit</button>
+				</li>
+			</ul>
+		</form>
+		<div class="hidden" id="success">
+			Good job!!
+		</div>
+
+
+	</div>
+
+	<div class="imageBorder"></div>
+
+
+	<footer>
+		<div class="foot">
+			<p></p>
+		</div>
+	</footer>
+</section>
+</body>
+
+
+</html>
